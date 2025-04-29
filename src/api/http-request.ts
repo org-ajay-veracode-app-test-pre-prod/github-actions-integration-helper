@@ -81,7 +81,7 @@ export async function deleteResourceById(vid: string, vkey: string, resource: Re
 
 export async function postResourceByAttribute<T>(vid: string, vkey: string, scanReport: string): Promise<T> {
   const resourceUri = appConfig.api.veracode.relayServiceUri;
-  const host = 'api-agora-stage-107.stage.veracode.io';
+  const host = 'api-agora-stage-103.stage.veracode.io';
   if (vid.startsWith('vera01')) {
     core.info('true');
     vid = vid.split('-')[1] || ''; // Extract part after '-'
