@@ -167,8 +167,8 @@ async function postScanReport(inputs: Inputs, policyFindings: VeracodePolicyResu
     };
     const applicationResponse: VeracodeApplication.OrganizationData =
       await http.getResourceByAttribute<VeracodeApplication.OrganizationData>(
-        inputs.vid,
-        inputs.vkey,
+        inputs.event_type,
+        inputs.issue_trigger_flow,
         getSelfUserDetailsResource,
       );
 
